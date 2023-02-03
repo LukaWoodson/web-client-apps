@@ -1,9 +1,37 @@
-header {
+body {
 	background-color: lightgray;
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
 }
 
-nav a {
-	margin-right: 10px;
-	text-decoration: none;
+header {
+	margin-bottom: 2rem;
+	background-color: navy;
+	color: white;
+	padding: 10px;
+	width: 100%;
 }
+
+h1 {
+	font-size: xxx-large;
+}
+
+nav a, main a {
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: white;
+	color: navy;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 10px;
+	border: 2px solid navy;
+	text-align: center;
+	font-size: larger;
+}
+
+li {
+	list-style: none;
+}
+
