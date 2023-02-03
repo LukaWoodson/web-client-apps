@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="./assignment-1.css">
+		<title>WebApps | Assignment 1</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="../index.html">Home</a>
+			</nav>
+		</header>
+		<main>
+			<h1>Assignment 1 - The Miles Per Gallon Calculator</h1>
+				<script>
+					"use strict";
+					
+					// get miles driven from user
+					const miles = parseFloat(prompt("Enter miles driven"));
+					
+					// get gallons used from user
+					const gallons = parseFloat(prompt("Enter gallons of gas used"));
+					
+					// calculate mpg
+					const mpg = parseFloat(miles/gallons);
+					
+					// display results
+					const html = `<p><label>Miles: </label>${miles.toFixed(2)}</p>
+                <p><label>Gallons: </label>${gallons.toFixed(2)}</p>
+                <p><label>MPG: </label>${mpg.toFixed(2)}</p>`;
+					document.write(html);
+				</script>
+		</main>
+	</body>
+</html>
